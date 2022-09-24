@@ -12,36 +12,76 @@ font-family: Tahoma;
   background-image: url("burning-man.png")
 }
 
+/*.flex-container {
+  display: flex;
+  
+}*/
+
 .flex-box-column {
   display: flex;
-  border: 5px solid #ece89d00;
+  box-sizing: border-box;
+  border: 5px solid #7e541400;
   flex-direction: column;
-  width: 100%;
-  align-items: flex-start;
-  justify-content: left;
+  justify-content: space-between;
+  background-color: rgba(172, 255, 47, 0);
   }
+
+  .flex-box-element {
+    flex: 100%;
+    width: auto;
+    
+    
+
+}
 
   .flex-box-row {
     display: flex;
-    width: 100%;
+    box-sizing: border-box;
     border: 5px solid #bd622500;
     flex-direction: row;
+    margin: 5px auto;
     justify-content: space-between;
-    
+    flex-basis: 50%;  
+    background-color: #d8924200;
     }
 
-  .flex-box-element {
-    width: 99%;
-    justify-content: center;
-   }
+    .flex-box-element-select-1 {
+      width: 100%;
+      overflow: hidden; 
+      flex-shrink: 1;
+      align-items: center;
+      margin-right: 15px;   
+      justify-content: space-between;
+      background-color: rgba(255, 0, 0, 0);
+    }
 
-  .flex-box-element-select {
-    flex-direction: row;
-    width: 99%;
+    .flex-box-element-select-2 {
+      width: 100%;
+      overflow: hidden; 
+      flex-shrink: 1;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(255, 0, 0, 0);
+    }
+
+  .flex-box-element-checked-1 {
+    width: 100%;
+    overflow: hidden;
+    margin-right: 15px;
     justify-content: left;
-    
-   }
+    align-items: center;
+    background-color: rgba(105, 18, 155, 0);
+  }
 
+  .flex-box-element-checked-2 {
+    width: 100%;
+    overflow: hidden;
+    justify-content: left;
+    align-items: center;
+    background-color: rgba(105, 18, 155, 0);
+  }
+  
+ 
 h1 {
   margin: 0 auto; 
   text-align: center;
@@ -73,7 +113,7 @@ form {
   
 }
 
-fieldset{
+fieldset {
   width: 50%;
   margin: 0 auto;
   /*border: none;*/
@@ -112,13 +152,13 @@ label {
 
 
 .input-control {
-  display: block;
+  display: flex;
+  box-sizing: border-box;
   width: 100%;
   height: 2em;
   font-weight: 800;
   background-color: #18171667;
   color: #fdf6f2;
-  padding: 0.3em;
   margin-top: 0.3em;
   border-color: #FFB256;
   outline: none;
@@ -132,12 +172,14 @@ input:focus {
 
 
 select {
-  width: 20em;
+ 
+  width: 100%;
   height: 3em;
   color: #fdf6f2;
   font-weight: 800;
   background-color: #18171667;
   padding: 0.2em;
+  margin-top: 0.3em;
   margin-bottom: 1em;
   border-color: #FFB256;
 }
@@ -158,14 +200,14 @@ option {
 }
 
 .textarea-control {
-  display: block;
-  width: 99%;
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
   height: 10em;
   font-weight: 800;
   font-size: 0.9em;
   background-color: #18171667;
   color: #fdf6f2;
-  padding: 0.3em;
   margin: 0.5em auto;
   border-color: #FFB256;
   outline: none;

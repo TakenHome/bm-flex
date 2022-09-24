@@ -13,18 +13,19 @@
                                   </header>
                                   <main>
                                     
+                                    <div class="flex-container">
                                       <fieldset>
                                         <legend>Complete this form, please</legend>
                                         <form id="survey-form" action='https://register-demo.freecodecamp.org'>
 
                                           <div class="flex-box-column">
-                                                <div class="flex-box-element">
+                                                <div>
                                                   <label id="name-label" for="name">Full name:
                                                   <input class="input-control" id="name" type="text" name="name" placeholder="enter your name" required>
                                                   </label>
                                                 </div>
                                                 
-                                                <div class="flex-box-element">
+                                                <div>
                                                   <label id="email-label" for="email">Email:
                                                   <input class="input-control" id="email" type="email" name="email" placeholder="enter your email" required>
                                                   </label>
@@ -38,9 +39,10 @@
                                             </div>    
                                             
                                        <div class="flex-box-row">
-                                        <div class="flex-box-element-select"> 
+                                        <div class="flex-box-element-select-1"> 
                                           <label for="dropdown">How did you hear about the festival?</label>
-                                          <select id="dropdown" name="dropdown">
+                                          <div>
+                                            <select id="dropdown" name="dropdown">
                                             <option disabled selected>(select one)</option>
                                             <option value="1">Internet</option>
                                             <option value="2">TV</option>
@@ -49,21 +51,25 @@
                                             <option value="5">City banner</option>
                                           </select> 
                                         </div>
+                                          
+                                        </div>
                                         
-                                        <div class="flex-box-element-select">
+                                        <div class="flex-box-element-select-2">
                                           <label for="most-impressed">What impressed you the most?</label>
-                                          <select id="most-impressed" name="most-impressed">
-                                              <option disabled selected>(select one)</option>
-                                            <option value="Music">Music</option>
-                                            <option value="Food">Food</option>
-                                            <option value="Decorations">Decorations</option>
-                                            <option value="surrounding">Surrounding</option>
-                                            </select>
+                                          <div>
+                                              <select id="most-impressed" name="most-impressed">
+                                                <option disabled selected>(select one)</option>
+                                                <option value="Music">Music</option>
+                                                <option value="Food">Food</option>
+                                                <option value="Decorations">Decorations</option>
+                                                <option value="surrounding">Surrounding</option>
+                                                </select>
+                                          </div>                                              
                                         </div>
                                        </div>     
                                        
                                         <div class="flex-box-row">
-                                          <div class="flex-box-element-select"><p class="p-label">Would you visit the festival again?</p>
+                                          <div class="flex-box-element-checked-1"><p class="p-label">Would you visit the festival again?</p>
                   
                                             <label class="label_radio_margin_top" for="totally">
                                                 <input id="totally" type="radio" class="inline" name="recommendation" value="totally" required>
@@ -86,7 +92,7 @@
                                               Never </label>
                                           </div>                                              
                                         
-                                          <div class="flex-box-element-select"><p class="p-label">What music genres do you prefer to play at the festival?</p>
+                                          <div class="flex-box-element-checked-2"><p class="p-label">What music genres do you prefer to play at the festival?</p>
                                             <label class="label_checkbox_margin_top"><input type="checkbox" name="genres" value="trance"> Trance</label>
                                             <label class="label_checkbox_margin_top"><input type="checkbox" name="genres" value="techno"> Techno</label>
                                             <label class="label_checkbox_margin_top"><input type="checkbox" name="genres" value="progressive-house"> Progressive house</label>
@@ -97,7 +103,6 @@
                                         </div>
                                         
                                       <div class="flex-box-column">
-
                                         <div class="flex-box-element">
                                           <label for="feedback"> Leave us a message (optional):</label>
                                           <textarea placeholder="Leave your message..." class="textarea-control" id="feedback" name="feedback" rows="10" col="25"></textarea>
@@ -105,14 +110,14 @@
                                             SUBMIT
                                           </button>
                                         </div>
-                                  
-                                        
                                       </div>
-                                    </fieldset>
-                                  </form>
-                                </main>
-                              </body>
-                              </html>   
+                                    </form>
+                                  </fieldset>
+                                </div>
+                              </main>
+                            </body>
+                           </html> 
+                              
                                     
                                 
 
